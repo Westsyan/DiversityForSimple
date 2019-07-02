@@ -1,0 +1,186 @@
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <link rel="stylesheet" href="../js/bootstrap/css/bootstrap.min.css">
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<style>
+    li {
+        list-style-type: none;
+    }
+</style>
+<table width='100%' class="table">
+    <tr>
+        <td width="300px">
+            <ul>
+                <li style="font-size:25px;color: red;">data/</li>
+                <li><a href="#" style="font-size: 20px;">rawData</a></li>
+                <li>--allRawData.stat.xls</li>
+                <li>--eachSample/</li>
+            </ul>
+        </td>
+        <td align="right">
+            <li style="font-size:25px;">原始序列数据 （后续发送）</li>
+            <li style="font-size: 20px;">未拼接的原始数据</li>
+            <li>原始数据统计</li>
+            <li>原始数据各样本文件</li>
+        </td>
+    </tr>
+
+    <tr>
+        <td width="300px">
+            <ul>
+                <li><a href="#" style="font-size: 20px;">valid</a></li>
+                <li>--cleanData.stat.xls</li>
+                <li>--valid.BIO*.fq</li>
+                <li>--valid.BIO*.fq.fasta</li>
+                <li>--eachSample/</li>
+            </ul>
+        </td>
+        <td align="right">
+            <li style="font-size: 20px;">优化序列</li>
+            <li>优化序列统计</li>
+            <li>优化序列fq文件</li>
+            <li>优化序列文件</li>
+            <li>优化序列各样本文件</li>
+        </td>
+    </tr>
+    </tr>
+
+    <tr>
+        <td width=300px>
+            <ul>
+                <li style="font-size:25px;color: red;">results/</li>
+                <li><a href="../../results/00.Data/" target="_blank" style="font-size: 20px;">00.Data</a></li>
+                <li>--cleanData.stat.xls</li>
+                <li>--clean.data.len.pdf</li>
+                <li>--clean.data.len.dist.txt</li>
+            </ul>
+        </td>
+        <td align="right">
+            <ul>
+                <li style="font-size: 25px;">分析结果</li>
+                <li style="font-size: 20px;">优化序列数据统计</li>
+                <li>优化序列数据统计表</li>
+                <li>优化序列长度分布图</li>
+                <li>优化序列长度分布</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td width=300px>
+            <ul>
+                <li><a href="../../results/01.OTU_Taxa/" target="_blank" style="font-size: 20px;">01.OTU_Taxa</a></li>
+                <li><a href="../../results/01.OTU_Taxa/normalize/" target="_blank">--normalize</a></li>
+                <li><a href="../../results/01.OTU_Taxa/original/" target="_blank">--original</a></li>
+                <li>----tax_summary_a</li>
+                <li>----tax_summary_r</li>
+                <li>----otu_table.xls</li>
+                <li>----otu_rep.fasta</li>
+                <li>----otu_seqids.txt</li>
+                <li>----otu_table.biom</li>
+                <li>----otu_taxa_table.xls</li>
+                <li>----otu_taxa_table.biom</li>
+            </ul>
+        </td>
+        <td align="right">
+            <ul>
+
+                <li style="font-size: 20px;">各分类学水平统计表</li>
+                <li>抽平的结果</li>
+                <li>原始的非抽平结果</li>
+                <li>各样本OTU中序列数统计表</li>
+                <li>OTU代表序列fasta文件</li>
+                <li>每个OTU中包含的序列编号列表</li>
+                <li>biom格式otu表</li>
+                <li>OTU分类学综合信息表</li>
+                <li>各分类学水平样本序列数统计表</li>
+                <li>各分类学水平样本序列数相对丰度百分比统计表</li>
+                <li>biom格式otu物种分类表</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td width=300px>
+            <ul>
+                <li><a href="../../results/02.Alpha/" target="_blank" style="font-size: 20px;">02.Alpha</a></li>
+                <li><a href="../../results/02.Alpha/Estimators/" target="_blank">--Estimators</a></li>
+                <li>----Estimate.html</li>
+                <li>----otu.*.summary.xls</li>
+                <li><a href="../../results/02.Alpha/Rarefaction/" target="_blank">--Rarefaction</a></li>
+                <li>----otu.*.rarefaction.xls</li>
+                <li>----rarefaction.All.pdf</li>
+                <li><a href="../../results/02.Alpha/Shannon_rarefac/" target="_blank">--Shannon_rarefac</a></li>
+                <li>----otu.*r.shannon.xls</li>
+                <li>----r_shannon.All.pdf</li>
+                <li><a href="../../results/02.Alpha/Rank_abundance/" target="_blank">--Rank_Abundance</a></li>
+                <li>----rankabundance.pdf</li>
+                <li><a href="../../results/02.Alpha/Specaccum/" target="_blank">--Specaccum</a></li>
+                <li>----specaccum.all.pdf</li>
+
+            </ul>
+        </td>
+        <td align="right">
+            <ul>
+                <li style="font-size: 20px;">Alpha多样性分析</li>
+                <li>多样性分析指数</li>
+                <li>每个样本的指数值</li>
+                <li>所有指数分析结果列表</li>
+                <li>取样深度曲线</li>
+                <li>每个样本在不同取样值的OTU数目表</li>
+                <li>多样本稀释曲线图</li>
+                <li>Shannon-wiener曲线</li>
+                <li>每个样本在不同取样值的shannon指数表</li>
+                <li>shannon曲线图</li>
+                <li>Rank Abundance分析</li>
+                <li>多样本曲线图</li>
+                <li>Specaccum分析</li>
+                <li>物种累积曲线图</li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td width=300px>
+            <ul>
+                <li><a href="../../results/03.Community_composition/" target="_blank" style="font-size: 20px;">03.Community_composition</a>
+                </li>
+                <li><a href="../../results/03.Community_composition/Community/" target="_blank">--Community</a></li>
+                <li>----*.xls</li>
+                <li>----bar.All.*.xls.pdf</li>
+            </ul>
+        </td>
+        <td align="right">
+            <ul>
+                <li style="font-size: 20px;">物种组成分析</li>
+                <li>群落结构组分图</li>
+                <li>用于作图的物种丰度表</li>
+                <li>多样本柱状图</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td width=300px>
+            <ul>
+                <li><a href="../../results/04.Beta/" target="_blank" style="font-size: 20px;">04.Beta</a></li>
+                <li><a href="../../results/04.Beta/PCA/" target="_blank">--PCA</a></li>
+                <li>----pc.sites.xls</li>
+                <li>----pc.importance.xls</li>
+                <li>----pca_rotation.xls</li>
+                <li>----pca_pc*.pdf</li>
+
+            </ul>
+        </td>
+        <td align="right">
+            <ul>
+                <li style="font-size: 20px;">Beta多样性比较分析</li>
+                <li>PCA分析</li>
+                <li>样本在各个维度上的位置，其中PC1为x轴，PC2为y轴，依此类推</li>
+                <li>各维度解释结果的百分比</li>
+                <li>记录了每个OTU对各主成分的贡献度</li>
+                <li>PCA图</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+<div align="center"><p>（注： 参考文献由于文件压缩包较大，邮件不方便发送，有需要可以来信索取。）</p></div>
